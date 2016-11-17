@@ -1,5 +1,6 @@
 ﻿import { Component } from '@angular/core';
 import { DataService } from './services/data.service';
+import { Layout } from './interfaces/layout.interface';
 
 @Component({
     selector: 'app',
@@ -7,10 +8,11 @@ import { DataService } from './services/data.service';
     templateUrl: 'app.template.html'
 })
 export class AppComponent {
-    constructor(public dataService: DataService) {
-    }
-}
+    layout: Layout = null;
 
-class SalesData {
-    constructor(public date: Date, public revenue: number, public unitSales: number) { }
+    constructor(public dataService: DataService) {
+        dataService.getDataObservable('/api/Layout/SalesDataForSku/AMM-223').subscribe(x => {
+            this.layout = <Layout><any>x;
+        });
+    }
 }

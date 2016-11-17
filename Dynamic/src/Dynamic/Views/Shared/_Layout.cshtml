@@ -9,12 +9,14 @@
     <script type="text/javascript" src="~/scripts/jquery.dataTables.min.js"></script>
     <script src="~/scripts/zone.min.js"></script>
     <script src="~/scripts/Reflect.js"></script>
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="~/css/select.bootstrap.min.css" />
+    <script type="text/javascript" src="~/scripts/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script>
-        console.log('loading charts...');
         google.charts.load('current', { 'packages': ['corechart'] });
         google.charts.setOnLoadCallback(function () {
-            console.log('charts loaded!');
             $.getScript("/scripts/build.min.js", function () { });
         });
     </script>

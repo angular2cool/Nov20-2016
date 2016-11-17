@@ -1,2 +1,10 @@
-﻿<visual-chart [url]="'/api/ProductSales/ForSku/AMM-223'"></visual-chart>
-<visual-table [url]="'/api/ProductSales/ForSku/AMM-223'"></visual-table>
+﻿<div *ngIf="!layout">
+    Loading layout...please wait!
+</div>
+<div *ngIf="layout">
+    <div [class]="row.className" *ngFor="let row of layout.rows">
+        <div [class]="item.className" *ngFor="let item of row.items">
+            {{item.visual}} goes here!
+        </div>
+    </div>
+</div>

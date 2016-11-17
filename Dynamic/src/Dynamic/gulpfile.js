@@ -49,9 +49,26 @@ gulp.task('copy-jquery', function () {
                 .pipe(gulp.dest('wwwroot/scripts/'))
 });
 
+/* bootstrap */
+gulp.task('copy-bootstrap-js', function () {
+    return gulp.src(['Scripts/bootstrap/dist/js/bootstrap.min.js'])
+                .pipe(gulp.dest('wwwroot/scripts/'))
+});
+
+gulp.task('copy-bootstrap-fonts', function () {
+    return gulp.src(['Scripts/bootstrap/dist/fonts/*'])
+                .pipe(gulp.dest('wwwroot/fonts/'))
+});
+
+gulp.task('copy-bootstrap-css', function () {
+    return gulp.src(['Scripts/bootstrap/dist/css/*'])
+                .pipe(gulp.dest('wwwroot/css/'))
+});
+
+gulp.task('copy-bootstrap', ['copy-bootstrap-js', 'copy-bootstrap-fonts', 'copy-bootstrap-css'], function () { });
 
 /* this should run before each build */
 gulp.task('BeforeBuild', ['aot-compile'], function () { });
 
 /* this should run after each build */
-gulp.task('AfterBuild', ['copy-zone', 'copy-reflect', 'copy-jquery', 'copy-datatables', 'rollup'], function () { });
+gulp.task('AfterBuild', ['copy-zone', 'copy-reflect', 'copy-jquery', 'copy-datatables', 'copy-bootstrap', 'rollup'], function () { });
