@@ -35,17 +35,5 @@ namespace Dynamic.Controllers
             }
             return retval;
         }
-
-        [HttpPut]
-        [Route("ForSku/{sku}")]
-        public JsonResult PutForSku(string sku, [FromBody] object body)
-        {
-            JObject b = (JObject)body;
-            var date = b.GetValue("date").ToString();
-            var revenue = b.GetValue("revenue").ToString();
-            var unitSales = b.GetValue("unitSales").ToString();
-            return Json("OK");
-        }
-
     }
 }
