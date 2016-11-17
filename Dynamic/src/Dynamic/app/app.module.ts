@@ -8,6 +8,6 @@ import { VISUAL_COMPONENTS } from './visuals';
     imports: [BrowserModule, HttpModule],
     declarations: [AppComponent, VISUAL_COMPONENTS],
     bootstrap: [AppComponent],
-    entryComponents: [AppComponent]
+    entryComponents: [AppComponent, VISUAL_COMPONENTS]
 })
 export class AppModule { }

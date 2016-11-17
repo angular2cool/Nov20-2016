@@ -3,8 +3,6 @@
 </div>
 <div *ngIf="layout">
     <div [class]="row.className" *ngFor="let row of layout.rows">
-        <div [class]="item.className" *ngFor="let item of row.items">
-            {{item.visual}} goes here!
-        </div>
+        <visual [class]="item.className" *ngFor="let item of row.items" [componentName]="item.visual" [layoutItem] ="item"></visual>
     </div>
 </div>
