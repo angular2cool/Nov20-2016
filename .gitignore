@@ -3,3 +3,19 @@
 ################################################################################
 
 /Dynamic/.vs
+/Dynamic/src/Dynamic/app/app
+/Dynamic/src/Dynamic/app/node_modules/@angular
+/Dynamic/src/Dynamic/bin/Debug/netcoreapp1.0
+/Dynamic/src/Dynamic/dist
+/Dynamic/src/Dynamic/node_modules
+/Dynamic/src/Dynamic/obj/Debug
+/Dynamic/src/Dynamic/Scripts
+/Dynamic/src/Dynamic/wwwroot/css
+/Dynamic/src/Dynamic/wwwroot/images
+/Dynamic/src/Dynamic/wwwroot/scripts
+/Dynamic/src/Dynamic/app/visuals/index.js
+/Dynamic/src/Dynamic/app/visuals/visual-chart.component.js
+/Dynamic/src/Dynamic/app/visuals/visual-table.component.js
+/Dynamic/src/Dynamic/app/main.js
+/Dynamic/src/Dynamic/typings
+/Dynamic/src/Dynamic/project.lock.json

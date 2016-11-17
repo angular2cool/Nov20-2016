@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "scripts": {
+    "typings": "typings",
+    "postinstall": "typings install",
+    "aot": "ngc -p tsconfig-aot.json",
+    "rollup": "node_modules/.bin/rollup -c rollup-config.js"
+  },
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-shell": "latest",
+    "typescript": "latest",
+    "typings": "latest",
+    "rollup": "0.36.3",
+    "rollup-plugin-node-resolve": "2.0.0",
+    "rollup-plugin-commonjs": "5.0.5",
+    "rollup-plugin-uglify": "1.0.1"
+  },
+  "dependencies": {
+    "@angular/common": "latest",
+    "@angular/compiler": "latest",
+    "@angular/core": "latest",
+    "@angular/forms": "latest",
+    "@angular/http": "latest",
+    "@angular/platform-browser": "latest",
+    "@angular/platform-browser-dynamic": "latest",
+    "@angular/router": "latest",
+    "@angular/router-deprecated": "latest",
+    "@angular/upgrade": "latest",
+    "@angular/platform-server": "latest",
+    "@angular/compiler-cli": "latest",
+    "angular2-in-memory-web-api": "latest",
+    "core-js": "latest",
+    "es6-shim": "latest",
+    "reflect-metadata": "latest",
+    "rxjs": "latest",
+    "systemjs": "latest",
+    "zone.js": "latest"
+  }
+}

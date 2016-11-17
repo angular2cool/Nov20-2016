@@ -1,0 +1,8 @@
+{
+  "globalDependencies": {
+    "es6-shim": "registry:dt/es6-shim#0.31.2+20160317120654",
+    "jquery": "github:DefinitelyTyped/DefinitelyTyped/jquery/jquery.d.ts",
+    "dataTables": "github:DefinitelyTyped/DefinitelyTyped/jquery.dataTables/jquery.dataTables.d.ts",
+    "google-visualization": "github:DefinitelyTyped/DefinitelyTyped/google.visualization/google.visualization.d.ts"
+  }
+}

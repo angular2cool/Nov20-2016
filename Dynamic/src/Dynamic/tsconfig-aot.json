@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "suppressImplicitAnyIndexErrors": true,
+    "noImplicitAny": false,
+    "removeComments": false,
+    "target": "es5",
+    "module": "es2015",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "outDir": "./dist/",
+    "rootDir": "./app"
+  },
+  "exclude": [
+    "node_modules",
+    "wwwroot",
+    "bin",
+    "Scripts"
+  ],
+  "angularCompilerOptions": {
+    "genDir": "/app",
+    "skipMetadataEmit": true
+  }
+}
